@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StartUp</title>
+</head>
+<body>
+     <%- include('_navbar') %>
+    <div class="container" style="margin-top:50px">
+        <table class="table">
+          <h2>StartUp</h2>
+           <% if (notification) { %>
+            <div class="alert alert-danger" role="alert">
+                <%= notification %>
+            </div>
+        <% } %>
+          <a href="/startUp" type="button" class="btn btn-light">All</a>
+           <form action="/startUp" method="GET">
+            <button type="submit" name="category" value="Hustler" class="btn btn-light">Hustler</button>
+            <button type="submit" name="category" value="Hipster" class="btn btn-light">Hipster</button>
+            <button type="submit" name="category" value="Hacker" class="btn btn-light">Hacker</button>
+          </form>
+            <thead>
+                <tr>
+                    <th scope="col">Start-Up Name</th>
+                    <th scope="col">Role of Founder</th>
+                    <th scope="col">Valuation</th>
+                    <th scope="col">Incubator Code</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% data.forEach(startup => { %>
+                    <tr>
+                        <td><%= startup.startUpName %></td>
+                        <td><%= startup.roleOfFounder %></td>
+                        <td><%= startup.valuation %></td>
+                        <td>
+                            <% let incubatorCode = "No Incubator"; %>
+                            <% incubator.forEach(item => { %>
+                                <% if (item.id === startup.IncubatorId) { %>
+                                    <% incubatorCode = item.code; %>
+                                <% } %>
+                            <% }) %>
+                            <%= incubatorCode %>
+                        </td>
+                        <td>
+                             <form action="startup/<%= startup.id %>/delete" method="POST" style="display: inline-block;">
+                                        <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this startup?')">Delete</button>
+                                    </form>
+                        </td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </div>
+    <%- include('_bootstrap') %>
+</body>
+</html>

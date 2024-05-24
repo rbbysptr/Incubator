@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Incubator</title>
+</head>
+<body>
+    <%- include('_navbar2') %>
+    <div class="text-start">
+    </div>
+    <div class="container" style="margin-top:50px;">
+        <h1 style="font-size: 30px;">Create New Incubator</h1>
+        <h2 style="font-size: 18px;">Please fill the form below to add a new Incubator!</h2>
+        
+        <form method="POST" action="/incubators/add">
+            <div class="mb-3">
+                <label for="name" class="form-label">The Name of The Incubator?</label>
+                <input type="text" class="form-control" id="name" name="name">
+            </div>
+            <div class="mb-3">
+                <label for="location" class="form-label">The Location of The Incubator?</label>
+                <input type="text" class="form-control" id="location" name="location">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">The Level of The Incubator?</label>
+                <% const level = ["International","National","Province"] %>
+                <% level.forEach(element =>{ %>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="level" id="level_<%= element %>" value="<%= element %>">
+                    <label class="form-check-label" for="level_<%= element %>"><%= element %></label>
+                    </div>
+                <%}) %>
+            </div>
+            <button type="submit" class="btn btn-light">Submit</button>
+        </form>
+    </div>
+    <<%- include('_bootstrap') %></ejs->
+</body>
+</html>

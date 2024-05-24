@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "BNV Labs",
+    "code": "1994-B-1635258320490",
+    "location": "Surabaya",
+    "level": "National"
+  },
+  {
+    "id": 2,
+    "name": "IDX Incubator",
+    "code": "1996-C-1635258241743",
+    "location": "Bandung",
+    "level": "Province"
+  },
+  {
+    "id": 3,
+    "name": "Daz Capital",
+    "code": "1992-A-1635247848961",
+    "location": "Jakarta",
+    "level": "International"
+  },
+  {
+    "id": 4,
+    "name": "Skystar Ventures",
+    "code": "1996-C-1635258396685",
+    "location": "Jakarta",
+    "level": "Province"
+  },
+  {
+    "id": 5,
+    "name": "Area 120",
+    "code": "1992-A-1635258496133",
+    "location": "USA",
+    "level": "International"
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "startUpName": "Dearfi Decor",
+    "founderName": "Fika",
+    "dateFound": "1994-11-06T00:00:00.000Z",
+    "educationOfFounder": "S3",
+    "roleOfFounder": "Hacker",
+    "IncubatorId": 4,
+    "valuation": 850000000
+  },
+  {
+    "id": 2,
+    "startUpName": "Bang Cukur",
+    "founderName": "Anggara",
+    "dateFound": "1994-08-20T00:00:00.000Z",
+    "educationOfFounder": "S1",
+    "roleOfFounder": "Hustler",
+    "IncubatorId": 3,
+    "valuation": 300000000
+  },
+  {
+    "id": 3,
+    "startUpName": "Terampil",
+    "founderName": "Idaz",
+    "dateFound": "1987-08-06 07:00:00+07",
+    "educationOfFounder": "S2",
+    "roleOfFounder": "Hustler",
+    "IncubatorId": 3,
+    "valuation": 8500000
+  },
+  {
+    "id": 4,
+    "startUpName": "Xendit",
+    "founderName": "Ha Ji Pyeong",
+    "dateFound": "1982-03-30T00:00:00.000Z",
+    "educationOfFounder": "S1",
+    "roleOfFounder": "Hipster",
+    "IncubatorId": 2,
+    "valuation": 900000000
+  },
+  {
+    "id": 5,
+    "startUpName": "Tesla",
+    "founderName": "Nam Do Sa",
+    "dateFound": "1990-08-30T00:00:00.000Z",
+    "educationOfFounder": "SMA",
+    "roleOfFounder": "Hipster",
+    "IncubatorId": 1,
+    "valuation": 700000000
+  },
+  {
+    "id": 6,
+    "startUpName": "Tokopedia",
+    "founderName": "Kurniawan",
+    "dateFound": "1998-03-30T00:00:00.000Z",
+    "educationOfFounder": "SMA",
+    "roleOfFounder": "Hustler",
+    "IncubatorId": 3,
+    "valuation": 500000000
+  },
+  {
+    "id": 7,
+    "startUpName": "Gojek",
+    "founderName": "Adi",
+    "dateFound": "1987-08-06T00:00:00.000Z",
+    "educationOfFounder": "S2",
+    "roleOfFounder": "Hacker",
+    "IncubatorId": 1,
+    "valuation": 1000000000
+  }
+]
